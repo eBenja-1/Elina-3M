@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Para Elina</title>
+  <meta name="description" content="Algo que hice para vos.">
+  <meta name="theme-color" content="#14061c">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ff5c9a' d='M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ ICONOS (sprite SVG) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-lock-body" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2.5"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6A1.4 1.4 0 0 1 5.4 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5z"/><path d="M22 9l-6 6"/><path d="M16 9l6 6"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-delete" viewBox="0 0 24 24"><path d="M10 5a2 2 0 0 0-1.34.52l-6.33 5.74a1 1 0 0 0 0 1.48l6.33 5.74A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/><path d="m12 9 6 6"/><path d="m18 9-6 6"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0l1.58 6.14a2 2 0 0 0 1.44 1.44l6.14 1.58a.5.5 0 0 1 0 .96l-6.14 1.58a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-flower" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 16.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 1 1 4.5 4.5 4.5 4.5 0 1 1-4.5 4.5"/><path d="M12 7.5V9"/><path d="M7.5 12H9"/><path d="M16.5 12H15"/><path d="M12 16.5V15"/></symbol>
+    <symbol id="i-replay" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-tap" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-4 0"/><path d="M14 10V4a2 2 0 0 0-4 0v2"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-6-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+    <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z"/></symbol>
+    <symbol id="i-drag" viewBox="0 0 24 24"><path d="m18 8 4 4-4 4"/><path d="m6 8-4 4 4 4"/><path d="M2 12h20"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ HUD ============ -->
+<audio id="musica" loop preload="auto"></audio>
+
+<button class="btn-musica" id="btnMusica" aria-label="Música" hidden>
+  <svg class="ico ico-on"><use href="#i-music"/></svg>
+  <svg class="ico ico-off"><use href="#i-mute"/></svg>
+  <span class="ecualizador" aria-hidden="true"><i></i><i></i><i></i></span>
+</button>
+
+<nav class="navegacion" id="navegacion" hidden>
+  <button class="nav-btn" id="btnAnterior" aria-label="Anterior"><svg class="ico"><use href="#i-prev"/></svg></button>
+  <div class="puntos" id="puntos"></div>
+  <button class="nav-btn nav-btn--principal" id="btnSiguiente" aria-label="Siguiente"><svg class="ico"><use href="#i-next"/></svg></button>
+</nav>
+
+<canvas id="cv-fx" class="cv-fx" aria-hidden="true"></canvas>
+
+<main class="escenas">
+
+  <!-- ===== 0. CANDADO ===== -->
+  <section class="escena escena--noche activa" id="e-candado" data-nav="false">
+    <div class="estrellas-css" aria-hidden="true"></div>
+    <div class="candado">
+      <div class="candado-icono" id="candadoIcono">
+        <svg viewBox="0 0 24 24" class="candado-svg">
+          <path class="candado-arco" d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          <rect x="3" y="11" width="18" height="11" rx="2.5"/>
+          <path class="candado-corazon" d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" transform="translate(12 16.6) scale(0.27) translate(-12 -12)"/>
+        </svg>
+      </div>
+      <p class="candado-para">Para <span class="script" data-ella></span></p>
+      <h1 class="candado-titulo">Ingresá nuestro código</h1>
+      <div class="pin-puntos" id="pinPuntos"><i></i><i></i><i></i><i></i></div>
+      <p class="pin-mensaje" id="pinMensaje">Pista: cuatro veces el mismo número</p>
+      <div class="teclado" id="teclado">
+        <button data-k="1">1</button><button data-k="2">2</button><button data-k="3">3</button>
+        <button data-k="4">4</button><button data-k="5">5</button><button data-k="6">6</button>
+        <button data-k="7">7</button><button data-k="8">8</button><button data-k="9">9</button>
+        <span></span><button data-k="0">0</button>
+        <button data-k="del" aria-label="Borrar" class="tecla-borrar"><svg class="ico"><use href="#i-delete"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 1. INTRO PARTÍCULAS ===== -->
+  <section class="escena escena--noche" id="e-intro">
+    <canvas id="cv-texto" class="cv-full"></canvas>
+    <p class="hint hint--abajo" id="hintIntro"><svg class="ico"><use href="#i-tap"/></svg> Tocá la pantalla</p>
+  </section>
+
+  <!-- ===== 2. GALAXIA ===== -->
+  <section class="escena escena--galaxia" id="e-galaxia">
+    <canvas id="cv-galaxia" class="cv-full"></canvas>
+    <div class="galaxia-titulo">
+      <span class="etiqueta"><svg class="ico"><use href="#i-sparkles"/></svg> Nuestro universo</span>
+      <h2 class="script">Mi mundo entero</h2>
+    </div>
+    <p class="hint hint--abajo"><svg class="ico"><use href="#i-drag"/></svg> Arrastrá para girar</p>
+  </section>
+
+  <!-- ===== 3. LUNA Y OCÉANO ===== -->
+  <section class="escena escena--luna" id="e-luna">
+    <canvas id="cv-luna" class="cv-full"></canvas>
+    <div class="luna-wrap">
+      <div class="luna" id="luna">
+        <svg class="pareja" viewBox="28 6 62 66" aria-hidden="true">
+          <defs>
+            <filter id="brilloPareja" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="1.6" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <g filter="url(#brilloPareja)">
+            <!-- él -->
+            <circle cx="49" cy="22" r="9"/>
+            <path d="M32 72 C32 50 38 36 48 33.5 C58 36 64 50 64 72 Z"/>
+            <!-- ella -->
+            <path d="M63.2 25 C62.6 13.5 80.4 12 81 24.4 C81.6 33 84.4 41 80.6 50 L64.6 50 C61 42 62.2 33 63.2 25 Z"/>
+            <circle cx="72" cy="25" r="8.4"/>
+            <path d="M59 72 C59 52 63.5 41 72 38.5 C80.5 41 86 52 86 72 Z"/>
+            <!-- brazo de él sobre ella -->
+            <path d="M58 44 C63 40 69 40 75 43" stroke-width="3.4" stroke-linecap="round" fill="none" class="brazo"/>
+          </g>
+        </svg>
+        <svg class="corazon-flota"><use href="#i-heart"/></svg>
+      </div>
+    </div>
+    <div class="luna-textos">
+      <h2 class="script luna-titulo">Nosotros en la luna</h2>
+      <p class="luna-sub">y el océano nos conecta</p>
+    </div>
+  </section>
+
+  <!-- ===== 4. CONTADOR ===== -->
+  <section class="escena escena--rosa" id="e-contador">
+    <div class="corazones-flotan" aria-hidden="true"></div>
+    <div class="contenido">
+      <span class="etiqueta etiqueta--oscura"><svg class="ico"><use href="#i-clock"/></svg> Juntos desde el 24 de julio de 2026</span>
+      <h2 class="titulo-grande"><span id="cMesesGrande">3</span> <span class="script">meses</span></h2>
+      <div class="contador" id="contador">
+        <div class="c-celda"><b id="cMeses">0</b><span>meses</span></div>
+        <div class="c-celda"><b id="cDias">0</b><span>días</span></div>
+        <div class="c-celda"><b id="cHoras">0</b><span>horas</span></div>
+        <div class="c-celda"><b id="cMin">0</b><span>min</span></div>
+        <div class="c-celda"><b id="cSeg">0</b><span>seg</span></div>
+      </div>
+      <p class="contador-total">Son <b id="cTotalDias">0</b> días, <b id="cTotalHoras">0</b> horas y <b id="cTotalLatidos">0</b> latidos eligiéndote.</p>
+    </div>
+  </section>
+
+  <!-- ===== 5. FOTOS ===== -->
+  <section class="escena escena--rosa-noche" id="e-fotos">
+    <div class="contenido contenido--fotos">
+      <span class="etiqueta"><svg class="ico"><use href="#i-camera"/></svg> Nuestros momentos</span>
+      <h2 class="script titulo-fotos">Lo más lindo que tengo</h2>
+      <div class="carrusel-escena" id="carruselEscena">
+        <div class="carrusel" id="carrusel"></div>
+      </div>
+      <p class="hint"><svg class="ico"><use href="#i-tap"/></svg> Tocá una foto</p>
+    </div>
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-cerrar" id="lightboxCerrar" aria-label="Cerrar"><svg class="ico"><use href="#i-x"/></svg></button>
+      <figure class="polaroid polaroid--grande">
+        <div class="polaroid-foto" id="lightboxFoto"></div>
+        <figcaption id="lightboxTexto"></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== 6. ROSAS ===== -->
+  <section class="escena escena--crema" id="e-rosas">
+    <div class="petalos" aria-hidden="true"></div>
+    <div class="contenido contenido--rosas">
+      <span class="etiqueta etiqueta--oscura"><svg class="ico"><use href="#i-flower"/></svg> Tus flores favoritas</span>
+      <h2 class="script titulo-rosas">Rosas para vos</h2>
+      <svg class="ramo" id="ramo" viewBox="0 0 400 460" aria-hidden="true"></svg>
+      <p class="rosas-texto">Porque si pudiera, te regalaría una por cada vez que me hacés sonreír.<br>Y no alcanzarían todas las rosas del mundo.</p>
+    </div>
+  </section>
+
+  <!-- ===== 7. CARTA ===== -->
+  <section class="escena escena--crema" id="e-carta">
+    <div class="petalos" aria-hidden="true"></div>
+    <div class="contenido contenido--carta">
+      <h2 class="script titulo-aniversario">Feliz Aniversario</h2>
+      <p class="subtitulo-fecha"><span></span> 3 meses <svg class="ico ico-mini"><use href="#i-heart"/></svg> 24 de octubre de 2026 <span></span></p>
+
+      <button class="sobre" id="sobre" aria-label="Abrir la carta">
+        <span class="sobre-atras"></span>
+        <span class="sobre-carta"><span class="sobre-carta-lineas"></span></span>
+        <span class="sobre-frente"></span>
+        <span class="sobre-solapa"></span>
+        <span class="sobre-sello"><svg><use href="#i-heart"/></svg></span>
+      </button>
+      <p class="hint hint--oscuro" id="hintSobre"><svg class="ico"><use href="#i-tap"/></svg> Tocá el sobre para abrir tu sorpresa</p>
+    </div>
+
+    <div class="carta-modal" id="cartaModal" hidden>
+      <article class="carta" id="carta">
+        <button class="carta-cerrar" id="cartaCerrar" aria-label="Cerrar carta"><svg class="ico"><use href="#i-x"/></svg></button>
+        <div class="carta-scroll" id="cartaScroll">
+          <p class="carta-saludo script" id="cartaSaludo"></p>
+          <div class="carta-cuerpo" id="cartaCuerpo"></div>
+          <p class="carta-firma" id="cartaFirma"></p>
+        </div>
+        <p class="carta-saltar" id="cartaSaltar">Tocá para ver todo</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== 8. ¿ME AMAS? ===== -->
+  <section class="escena escena--noche-rosa" id="e-pregunta" data-nav-next="false">
+    <div class="estrellas-css" aria-hidden="true"></div>
+    <div class="pregunta" id="pregunta">
+      <svg class="pregunta-corazon"><use href="#i-heart"/></svg>
+      <h2 class="pregunta-titulo"><span class="script">¿Me amas?</span></h2>
+      <div class="pregunta-botones" id="preguntaBotones">
+        <button class="btn-si" id="btnSi">Sí</button>
+        <button class="btn-no" id="btnNo">No</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 9. FINAL ===== -->
+  <section class="escena escena--final" id="e-final" data-nav-next="false">
+    <div class="petalos" aria-hidden="true"></div>
+    <div class="contenido contenido--final">
+      <p class="final-pre">Sabía que sí</p>
+      <h2 class="script final-titulo">Te amo, <span data-ella></span></h2>
+      <p class="final-sub">Feliz 3 meses. Gracias por elegirme todos los días.<br>Esto recién empieza.</p>
+      <div class="final-fechas">
+        <span>24 . 07 . 2026</span>
+        <svg class="ico"><use href="#i-infinity"/></svg>
+        <span>para siempre</span>
+      </div>
+      <button class="btn-pill" id="btnRepetir"><svg class="ico"><use href="#i-replay"/></svg> Ver de nuevo</button>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/particulas-texto.js"></script>
+<script src="js/galaxia.js"></script>
+<script src="js/oceano.js"></script>
+<script src="js/rosas.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
